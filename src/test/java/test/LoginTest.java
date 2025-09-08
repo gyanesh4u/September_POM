@@ -1,5 +1,7 @@
 package test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -25,7 +27,7 @@ public class LoginTest extends BasePage {
 		lp.doLogin(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"));
 		boolean status = dp.dashBoardText();
 		System.out.println(status);
-		Assert.assertTrue(status);
+		AssertJUnit.assertTrue(status);
 	}
 
 	@Step("title test")
@@ -38,7 +40,7 @@ public class LoginTest extends BasePage {
 		// LoginPage lp = new LoginPage(driver);
 		String title = lp.title();// abstraction
 		System.out.println("title is " + title + "...");
-		Assert.assertEquals(title, "OrangeHRM");
+		AssertJUnit.assertEquals(title, "OrangeHRM");
 	}
 
 	@Step("url test")
@@ -51,6 +53,6 @@ public class LoginTest extends BasePage {
 		// LoginPage lp = new LoginPage(driver);
 		String url = lp.getUrlTest();
 		System.out.println(url);
-		Assert.assertEquals(url, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");//https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+		AssertJUnit.assertEquals(url, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");//https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
 	}
 }
