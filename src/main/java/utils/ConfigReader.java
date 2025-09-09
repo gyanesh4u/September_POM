@@ -12,7 +12,7 @@ public class ConfigReader {
 		prop = new Properties();
 		try {
 			FileInputStream ip = new FileInputStream(
-					"/Users/gyaneshkamal/eclipse-workspace/September_POM_Series/src/test/resources/config/config.properties");
+					System.getProperty("user.dir") + "/src/test/resources/config/config.properties");
 			prop.load(ip);
 		} catch (IOException e) {
 			throw new RuntimeException("failed to load config file");

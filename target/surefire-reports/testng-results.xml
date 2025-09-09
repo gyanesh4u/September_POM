@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-08T15:28:53 IST" name="Suite" finished-at="2025-09-08T15:29:08 IST" duration-ms="14807">
+  <suite started-at="2025-09-09T12:17:49 IST" name="Suite" finished-at="2025-09-09T12:18:01 IST" duration-ms="11556">
     <groups>
     </groups>
-    <test started-at="2025-09-08T15:28:53 IST" name="Test" finished-at="2025-09-08T15:29:08 IST" duration-ms="14807">
+    <test started-at="2025-09-09T12:17:49 IST" name="Test" finished-at="2025-09-09T12:18:01 IST" duration-ms="11556">
       <class name="test.LoginTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:28:53 IST" name="beforeSuite" finished-at="2025-09-08T15:28:53 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:17:49 IST" name="beforeSuite" finished-at="2025-09-09T12:17:49 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:28:53 IST" name="setUp" finished-at="2025-09-08T15:29:05 IST" duration-ms="11221" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:17:49 IST" name="setUp" finished-at="2025-09-09T12:17:58 IST" duration-ms="8284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="urlTest()[pri:1, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:29:05 IST" name="urlTest" finished-at="2025-09-08T15:29:05 IST" duration-ms="26" status="PASS">
+        <test-method signature="urlTest()[pri:1, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:17:58 IST" name="urlTest" finished-at="2025-09-09T12:17:58 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:29:05 IST" name="captureFailureScreenshot" finished-at="2025-09-08T15:29:05 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:17:58 IST" name="captureFailureScreenshot" finished-at="2025-09-09T12:17:58 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="titleTest()[pri:2, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:29:05 IST" name="titleTest" finished-at="2025-09-08T15:29:05 IST" duration-ms="6" status="PASS">
+        <test-method signature="titleTest()[pri:2, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:17:58 IST" name="titleTest" finished-at="2025-09-09T12:17:58 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:29:05 IST" name="captureFailureScreenshot" finished-at="2025-09-08T15:29:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:17:58 IST" name="captureFailureScreenshot" finished-at="2025-09-09T12:17:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="loginTest()[pri:3, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:29:05 IST" name="loginTest" finished-at="2025-09-08T15:29:08 IST" duration-ms="3370" status="PASS">
+        <test-method signature="loginTest()[pri:3, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:17:58 IST" name="loginTest" finished-at="2025-09-09T12:18:01 IST" duration-ms="3059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:29:08 IST" name="captureFailureScreenshot" finished-at="2025-09-08T15:29:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:18:01 IST" name="captureFailureScreenshot" finished-at="2025-09-09T12:18:01 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-08T15:29:08 IST" name="tearDown" finished-at="2025-09-08T15:29:08 IST" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@71ba6d4e]" started-at="2025-09-09T12:18:01 IST" name="tearDown" finished-at="2025-09-09T12:18:01 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -12,13 +12,14 @@ public class Screenshot {
 		if (driver == null) {
 			System.out.println("driver is null cannot capture screenshot...");
 		}
-		
+
 		try {
 			Thread.sleep(2000);
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File src = ts.getScreenshotAs(OutputType.FILE);
 
-			String dest = "./snap/" + testName + System.currentTimeMillis() + ".png";
+			// String dest = "./snap/" + testName + System.currentTimeMillis() + ".png";
+			String dest = System.getProperty("user.dir") + "/snap/" + testName + System.currentTimeMillis() + ".png";
 			FileUtils.copyFile(src, new File(dest));
 			System.out.println("screenshot saved " + dest);
 		} catch (Exception e) {
