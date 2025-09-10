@@ -12,6 +12,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
+import listeners.Retry;
 import utils.ConfigReader;
 
 public class LoginTest extends BasePage {
@@ -35,7 +36,7 @@ public class LoginTest extends BasePage {
 	@Description("this test is performing title test")
 	@Owner("Gyanesh")
 	@Link(url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-	@Test(priority = 2)
+	@Test(priority = 2,retryAnalyzer = Retry.class)
 	public void titleTest() {
 		// LoginPage lp = new LoginPage(driver);
 		String title = lp.title();// abstraction
