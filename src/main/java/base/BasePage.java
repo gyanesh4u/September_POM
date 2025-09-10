@@ -11,6 +11,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -36,6 +38,7 @@ public class BasePage {
 	protected WaitUtil wait;
 
 	@BeforeSuite
+
 	public void beforeSuite() {
 
 		prop = ConfigReader.initProperties();
@@ -45,8 +48,12 @@ public class BasePage {
 	@Story("Login ST-01")
 	@Feature("Orange HRM Login")
 	@BeforeClass
-	public void setUp() {
-		String browserName = prop.getProperty("browser");
+	@Parameters({ "browser" })
+	public void setUp(@Optional("chrome")String browserName) {
+		// browserName = prop.getProperty("browser");
+		if (browserName == null || browserName.isEmpty()) {
+			browserName = prop.getProperty("browser");
+		}
 		switch (browserName.trim().toLowerCase()) {
 		case "chrome":
 			driver = new ChromeDriver();

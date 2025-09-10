@@ -4,7 +4,8 @@
   <listeners>
     <listener class-name="listeners.TestAllureListener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="test.LoginTest">
         <methods>
@@ -13,8 +14,26 @@
           <include name="captureFailureScreenshot"/>
           <include name="setUp"/>
           <include name="titleTest"/>
+          <include name="urlTest"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- test.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="captureFailureScreenshot"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="urlTest"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

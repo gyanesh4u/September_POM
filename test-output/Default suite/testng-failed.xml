@@ -9,6 +9,8 @@
           <include name="tearDown"/>
           <include name="captureFailureScreenshot"/>
           <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="urlTest"/>
           <include name="titleTest"/>
         </methods>
       </class> <!-- test.LoginTest -->
