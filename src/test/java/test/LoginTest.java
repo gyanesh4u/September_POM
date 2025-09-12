@@ -24,6 +24,7 @@ public class LoginTest extends BasePage {
 	@Link(url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 	@Test(priority = 3)
 	public void loginTest() {
+		
 		// LoginPage lp = new LoginPage(driver);
 		lp.doLogin(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"));
 		boolean status = dp.dashBoardText();

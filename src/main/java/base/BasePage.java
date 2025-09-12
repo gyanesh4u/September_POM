@@ -2,6 +2,7 @@ package base;
 
 import java.time.Duration;
 import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,6 +11,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -19,6 +21,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import pages.DashBoardPage;
 import pages.LoginPage;
+import pages.PimPage;
 import utils.ConfigReader;
 import utils.Screenshot;
 import utils.WaitUtil;
@@ -35,6 +38,7 @@ public class BasePage {
 	protected LoginPage lp;
 	protected Properties prop;
 	protected DashBoardPage dp;
+	protected PimPage pp;
 	protected WaitUtil wait;
 
 	@BeforeSuite
@@ -79,6 +83,7 @@ public class BasePage {
 		wait = new WaitUtil(driver);
 		lp = new LoginPage(driver, wait);
 		dp = new DashBoardPage(driver, wait);
+		pp=new PimPage(driver, wait);
 
 	}
 

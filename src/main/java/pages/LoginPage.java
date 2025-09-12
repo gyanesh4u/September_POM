@@ -35,6 +35,7 @@ public class LoginPage {
  * @param un
  * @param pass
  */
+	//abstraction can be achieved using creating methods that will be used by out test class
 	public DashBoardPage doLogin(String un, String pass) {
 		 wait.waitForVisibility(userName).sendKeys(un);
 	        wait.waitForVisibility(pwd).sendKeys(pass);

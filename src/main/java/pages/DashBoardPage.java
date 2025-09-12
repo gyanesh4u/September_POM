@@ -15,7 +15,17 @@ public class DashBoardPage {
 	@FindBy(xpath = "//h6[.='Dashboard']")
 	private WebElement dashBoardText;
 
+	@FindBy(xpath = "//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")
+	private WebElement userDropdown;
+
+	@FindBy(xpath = "//a[.='PIM']")
+	private WebElement pimLink;
+
+	@FindBy(xpath = "//a[.='Logout']")
+	private WebElement logout;
+
 	public DashBoardPage(WebDriver driver, WaitUtil wait) {
+		this.driver = driver;
 		this.wait = wait;
 		PageFactory.initElements(driver, this);
 	}
@@ -25,5 +35,16 @@ public class DashBoardPage {
 		wait.waitForVisibility(dashBoardText);
 		return dashBoardText.isDisplayed();
 
+	}
+
+	public LoginPage logout() {
+		wait.waitForVisibility(userDropdown).click();
+		wait.waitForVisibility(logout).click();
+		return new LoginPage(driver, wait);
+	}
+
+	public PimPage clickOnPIM() {
+		wait.waitForVisibility(pimLink).click();
+		return new PimPage(driver, wait);
 	}
 }

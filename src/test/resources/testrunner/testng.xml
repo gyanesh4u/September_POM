@@ -3,23 +3,27 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="listeners.TestAllureListener"></listener>
+		<listener class-name="listeners.AnnotationTransformer"></listener>
 	</listeners>
 	<test name="Chrome Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="test.LoginTest" />
+			<class name="test.DashBoardTest" />
 		</classes>
 	</test>
 	<test name="Firefox Test">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="test.LoginTest" />
+			<class name="test.DashBoardTest" />
 		</classes>
 	</test>
 	<test name="Safari Test">
 		<parameter name="browser" value="safari"></parameter>
 		<classes>
 			<class name="test.LoginTest" />
+			<class name="test.DashBoardTest" />
 		</classes>
 	</test> <!--
 	Test -->
